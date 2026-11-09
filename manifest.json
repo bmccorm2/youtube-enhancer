@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Enhancer",
+  "version": "0.1.0",
+  "description": "Default playback speed and speed buttons for YouTube.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "youtube-enhancer@bryan.local",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  }
+}

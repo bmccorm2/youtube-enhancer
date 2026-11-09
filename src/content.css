@@ -1,0 +1,41 @@
+#yte-speed {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+  vertical-align: top;
+}
+
+#yte-speed .ytp-button {
+  width: 28px;
+  height: 100%;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+}
+
+#yte-speed .ytp-button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#yte-speed .yte-label {
+  display: inline-block;
+  min-width: 40px;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ytp-big-mode #yte-speed .ytp-button {
+  width: 36px;
+  font-size: 26px;
+}
+
+.ytp-big-mode #yte-speed .yte-label {
+  min-width: 52px;
+  font-size: 17px;
+}
